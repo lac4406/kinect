@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinect", "Kinect\Kinect.csproj", "{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorBasics-WPF", "..\..\..\Documents\ColorBasics-WPF\ColorBasics-WPF.csproj", "{4467C0A4-9040-48BF-B9B7-911A4148D013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthBasics-WPF", "..\..\..\Documents\DepthBasics-WPF\DepthBasics-WPF.csproj", "{B814AEE7-0717-4BF4-BACB-150E8AA91633}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Debug|x64.Build.0 = Debug|Any CPU
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Release|x64.ActiveCfg = Release|Any CPU
+		{4C7CBFFD-DBC6-4D9B-8F95-6D97F0C76176}.Release|x64.Build.0 = Release|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Debug|x64.Build.0 = Debug|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Release|x64.ActiveCfg = Release|Any CPU
+		{4467C0A4-9040-48BF-B9B7-911A4148D013}.Release|x64.Build.0 = Release|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Debug|x64.Build.0 = Debug|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Release|x64.ActiveCfg = Release|Any CPU
+		{B814AEE7-0717-4BF4-BACB-150E8AA91633}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2539FAA7-F151-40FB-B3D2-23FE4E5D93F7}
+	EndGlobalSection
+EndGlobal

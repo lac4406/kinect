@@ -1,0 +1,65 @@
+﻿<Window x:Class="Kinect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kinect"
+        mc:Ignorable="d"
+        Title="Kinect Color and Depth Tool" Height="960" Width="1280" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="148"/>
+            <RowDefinition Height="812"/>
+        </Grid.RowDefinitions>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="1272" Fill="#FFF47B20"/>
+        <TabControl HorizontalAlignment="Left" Height="767" Margin="10,4,0,0" VerticalAlignment="Top" Width="1252" Grid.Row="1">
+            <TabItem Header="Home" Margin="15,15,-73,-13" FontSize="14" Height="32" Width="120" Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="575"/>
+                        <RowDefinition Height="53"/>
+                        <RowDefinition Height="154"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Name="Select_Folder" Content="Select Folder" HorizontalAlignment="Left" Height="35" Margin="1008,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" FontSize="20" Click="Select_Folder_Click"/>
+                    <TextBox x:Name="FolderPath" HorizontalAlignment="Left" Height="35" Margin="48,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="889" FontSize="20"/>
+                    <TextBox x:Name="Filename" HorizontalAlignment="Left" Height="35" Margin="165,16,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Left" Height="53" Margin="178,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="921" FontSize="36" TextAlignment="Center"><Run FontWeight="Bold" Text="Welcome to the Kinect Color and Depth Recording Tool"/><LineBreak/><Run FontWeight="Bold"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Height="460" Margin="48,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1118" FontSize="14"><Run FontSize="18" Text="This Program is to record Color and Depth information from the Microsoft Kinect. "/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" FontSize="18" Text="HOW TO:"/><LineBreak/><Run/><LineBreak/><Run FontSize="16" Text="1) To start recording, please choose which folder to save the files by pressing the select folder button, then introduce the Signer ID as well as the utterance ID of the video. The videos to be saved as follows: "/><LineBreak/><Run FontSize="16"/><LineBreak/><Run FontSize="16" Text="&#x9;- The files will be named &lt;Signer_ID&gt;_&lt;Utterance_ID&gt;_depth for the depth camera and &lt;Signer_ID&gt;_&lt;Utterance_ID&gt;_color for the color camera"/><LineBreak/><LineBreak/><Run FontSize="16" Text="2) Go to the Recording tab and hit the Record button to start the recording process, after that a 5 seconds timer will start and after those 5 seconds the application will start recording . To stop recording hit the button again. "/><LineBreak/><LineBreak/><Run FontSize="16" Text="3) Go to the file directory to verify if the files saved correctly."/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" FontSize="18" Text="TROUBLESHOOTING."/><LineBreak/><Run/><LineBreak/><Run FontSize="16" Text="If the Application crashed, it is most likely due to not having enough memory to continue. In this case, please restart the program and retry."/><LineBreak/><Run FontSize="16"/><LineBreak/><Run FontSize="16" Text="If there is no incoming feed from the Kinect, please close this application and unplug the Kinect. Next, plug in the Kinect and restart the application. "/><Run FontWeight="Bold" FontSize="16" Text="To run this program, make sure to have installed the &quot;Kinect for Windows SDK 2.0&quot;, since this contains the drivers of the Kinect. "/><LineBreak/><LineBreak/><Run FontSize="16" Text="Make sure no other program is running at the same time. This will ensure best results."/></TextBlock>
+                    <TextBox x:Name="uterance_id" HorizontalAlignment="Left" Height="38" Margin="524,16,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" RenderTransformOrigin="0.5,0.5" FontSize="20">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.42"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <Label Content="Signer ID:" HorizontalAlignment="Left" Margin="48,12,0,0" VerticalAlignment="Top" Grid.Row="2" Width="94" FontSize="20"/>
+                    <Label Content="Utterance ID:" HorizontalAlignment="Left" Margin="379,16,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="20"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Record" Margin="15,15,-98,-13" Height="32" FontSize="14" Width="120" Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="515"/>
+                        <RowDefinition Height="267"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="93.5"/>
+                        <ColumnDefinition Width="22"/>
+                        <ColumnDefinition Width="524"/>
+                        <ColumnDefinition Width="640"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Name="ColorStream" Source="{Binding ColorSource}" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Margin="204,0,320,0"/>
+                    <Button Name="RecordBtn" Content="RECORD" HorizontalAlignment="Left" Height="35" Margin="429,79,0,0" Grid.Row="1" Grid.Column="3" VerticalAlignment="Top" Width="157" FontSize="20" Click="RecordBtn_Click" RenderTransformOrigin="0.599,3.102"/>
+                    <Label x:Name="CountDown" Content="0" Grid.Column="2" HorizontalAlignment="Left" Margin="0,34,0,0" Grid.Row="1" VerticalAlignment="Top" Height="127" Width="180" FontSize="72" FontWeight="Bold"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>
