@@ -216,5 +216,6 @@
     <Resource Include="ffmpeg\LICENSE.txt" />
     <Resource Include="ffmpeg\README.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

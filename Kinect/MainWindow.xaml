@@ -5,16 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kinect"
         mc:Ignorable="d"
-        Title="Kinect Color and Depth Tool" Height="960" Width="1280" ResizeMode="NoResize">
+        Title="Kinect Color and Depth Tool" Height="960" Width="1280" WindowStartupLocation="CenterOwner">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1060*"/>
+            <ColumnDefinition Width="158*"/>
+            <ColumnDefinition Width="55*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="148"/>
             <RowDefinition Height="812"/>
         </Grid.RowDefinitions>
 
 
-        <Rectangle HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="1272" Fill="#FFF47B20"/>
-        <TabControl HorizontalAlignment="Left" Height="767" Margin="10,4,0,0" VerticalAlignment="Top" Width="1252" Grid.Row="1">
+        <Rectangle HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="1272" Fill="#FFF47B20" Grid.ColumnSpan="3"/>
+        <TabControl HorizontalAlignment="Left" Height="876" Margin="10,43,0,0" VerticalAlignment="Top" Width="1252" Grid.ColumnSpan="3" Grid.RowSpan="2">
             <TabItem Header="Home" Margin="15,15,-73,-13" FontSize="14" Height="32" Width="120" Padding="0">
                 <Grid>
                     <Grid.RowDefinitions>

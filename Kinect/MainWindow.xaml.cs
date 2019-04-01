@@ -323,7 +323,7 @@ namespace Kinect
             string strCmdText;
             string filename = Filename.Text;
             //string path = Directory.GetCurrentDirectory();
-            strCmdText = @"/C "+path+"\\ffmpeg\\bin\\ffmpeg -f image2 -r 30 -i %d.jpg -r 30 "+ filename+"_"+ uterance_id.Text +type+ ".avi & del *.jpg";
+            strCmdText = @"/C " + path + "\\ffmpeg\\bin\\ffmpeg -f image2 -r 30 -i %d.jpg -r 30 " + filename + "_" + uterance_id.Text + type + ".avi "; // & del *.jpg";
             Process process = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo();
             //startInfo.WindowStyle = ProcessWindowStyle.Hidden;
