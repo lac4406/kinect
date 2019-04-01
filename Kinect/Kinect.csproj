@@ -281,6 +281,7 @@
     <Content Include="bin\Debug\Accord.dll" />
     <Content Include="bin\Debug\Accord.Video.dll" />
     <Content Include="bin\Debug\Accord.Video.FFMPEG.x64.dll" />
+    <Content Include="tutorial.mp4" />
     <Resource Include="bin\Debug\Accord.Video.FFMPEG.x64.xml" />
     <Content Include="bin\Debug\app.publish\Kinect.exe" />
     <Content Include="bin\Debug\avcodec-53.dll" />
