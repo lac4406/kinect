@@ -119,6 +119,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="obj\Debug\App.g.cs" />
+    <Compile Include="obj\Debug\App.g.i.cs" />
+    <Compile Include="obj\Debug\Kinect_Content.g.cs" />
+    <Compile Include="obj\Debug\Kinect_Content.g.i.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Debug\Window1.g.i.cs" />
+    <Compile Include="obj\Release\App.g.cs" />
+    <Compile Include="obj\Release\Kinect_Content.g.cs" />
+    <Compile Include="obj\Release\MainWindow.g.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -132,10 +148,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="obj\Debug\Kinect.g.resources" />
+    <EmbeddedResource Include="obj\Debug\Kinect.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\Kinect.application" />
+    <None Include="bin\Debug\Kinect.exe.config" />
+    <None Include="bin\Debug\Kinect.exe.manifest" />
+    <None Include="bin\Debug\KinectTool.zip" />
+    <None Include="bin\Release\Kinect.exe.config" />
     <None Include="ffmpeg\presets\ffprobe.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -145,10 +168,88 @@
     <None Include="ffmpeg\presets\libvpx-720p.ffpreset" />
     <None Include="ffmpeg\presets\libvpx-720p50_60.ffpreset" />
     <None Include="Kinect_TemporaryKey.pfx" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Kinect.application" />
+    <None Include="obj\Debug\Kinect.csproj.CopyComplete" />
+    <None Include="obj\Debug\Kinect.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Kinect.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\Kinect.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\Kinect.exe.manifest" />
+    <None Include="obj\Debug\Kinect_MarkupCompile.cache" />
+    <None Include="obj\Debug\Kinect_MarkupCompile.i.cache" />
+    <None Include="obj\Debug\Kinect_MarkupCompile.i.lref" />
+    <None Include="obj\Debug\Kinect_MarkupCompile.lref" />
+    <None Include="obj\Debug\MainWindow.baml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Controls.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.DebuggerVisualizers %282010%29.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Fuzzy.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Genetic.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Imaging.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Imaging.Formats.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Imaging.IPPrototyper.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.MachineLearning.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Math.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Neuro.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Robotics.TeRK.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Video.DirectShow.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Video.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Video.FFMPEG.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Video.Kinect.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Video.VFW.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Video.Ximea.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\AForge.Vision.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\avcodec-53.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\avdevice-53.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\avfilter-2.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\avformat-53.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\avutil-51.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\postproc-52.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\swresample-0.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\External\swscale-2.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\Kinect.application" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\Kinect.exe.config.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\Kinect.exe.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\Kinect.exe.manifest" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_0\Microsoft.Kinect.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Controls.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.DebuggerVisualizers %282010%29.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Fuzzy.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Genetic.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Imaging.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Imaging.Formats.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Imaging.IPPrototyper.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.MachineLearning.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Math.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Neuro.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Robotics.TeRK.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Video.DirectShow.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Video.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Video.FFMPEG.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Video.Kinect.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Video.VFW.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Video.Ximea.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\AForge.Vision.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\avcodec-53.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\avdevice-53.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\avfilter-2.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\avformat-53.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\avutil-51.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\postproc-52.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\swresample-0.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\External\swscale-2.dll.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\Kinect.application" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\Kinect.exe.config.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\Kinect.exe.deploy" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\Kinect.exe.manifest" />
+    <None Include="Publish\Application Files\Kinect_1_0_0_1\Microsoft.Kinect.dll.deploy" />
+    <None Include="Publish\Kinect.application" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -177,6 +278,33 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Accord.dll" />
+    <Content Include="bin\Debug\Accord.Video.dll" />
+    <Content Include="bin\Debug\Accord.Video.FFMPEG.x64.dll" />
+    <Resource Include="bin\Debug\Accord.Video.FFMPEG.x64.xml" />
+    <Content Include="bin\Debug\app.publish\Kinect.exe" />
+    <Content Include="bin\Debug\avcodec-53.dll" />
+    <Content Include="bin\Debug\avcodec-57.dll" />
+    <Content Include="bin\Debug\avdevice-53.dll" />
+    <Content Include="bin\Debug\avdevice-57.dll" />
+    <Content Include="bin\Debug\avfilter-2.dll" />
+    <Content Include="bin\Debug\avfilter-6.dll" />
+    <Content Include="bin\Debug\avformat-53.dll" />
+    <Content Include="bin\Debug\avformat-57.dll" />
+    <Content Include="bin\Debug\avutil-51.dll" />
+    <Content Include="bin\Debug\avutil-55.dll" />
+    <Content Include="bin\Debug\Kinect.exe" />
+    <Content Include="bin\Debug\Kinect.pdb" />
+    <Content Include="bin\Debug\Microsoft.Kinect.dll" />
+    <Resource Include="bin\Debug\Microsoft.Kinect.xml" />
+    <Content Include="bin\Debug\postproc-52.dll" />
+    <Content Include="bin\Debug\postproc-54.dll" />
+    <Content Include="bin\Debug\swresample-0.dll" />
+    <Content Include="bin\Debug\swresample-2.dll" />
+    <Content Include="bin\Debug\swscale-2.dll" />
+    <Content Include="bin\Debug\swscale-4.dll" />
+    <Content Include="bin\Release\Kinect.exe" />
+    <Content Include="bin\Release\Kinect.pdb" />
     <Content Include="ffmpeg\bin\ffmpeg.exe" />
     <Content Include="ffmpeg\bin\ffplay.exe" />
     <Content Include="ffmpeg\bin\ffprobe.exe" />
@@ -213,9 +341,16 @@
     <Content Include="ffmpeg\doc\nut.html" />
     <Content Include="ffmpeg\doc\platform.html" />
     <Content Include="ffmpeg\doc\style.min.css" />
+    <Content Include="Publish\setup.exe" />
+    <Resource Include="obj\Debug\Kinect.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Kinect.exe" />
+    <Content Include="obj\Debug\Kinect.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <Resource Include="ffmpeg\LICENSE.txt" />
     <Resource Include="ffmpeg\README.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="bin\Publish\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
